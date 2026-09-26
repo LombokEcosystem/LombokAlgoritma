@@ -15,15 +15,15 @@ from lombokalgoritma.hash import xxhash64, siphash24
 from lombokalgoritma.graph import Graph, dijkstra
 from lombokalgoritma.errors import AlgoError
 
-quicksort([3, 1, 2])                              # [1, 2, 3]
-binary_search([1, 3, 5], 5)                       # 2
-levenshtein("kitten", "sitting")                  # 3
-f"{xxhash64(b'abc'):016x}"                        # '44bc2cf5ad770999'
-dijkstra(Graph(3, [(0, 1, 2.0), (1, 2, 3.0)]), 0) # [0, 2.0, 5.0]
+quicksort([3, 1, 2])  # [1, 2, 3]
+binary_search([1, 3, 5], 5)  # 2
+levenshtein("kitten", "sitting")  # 3
+f"{xxhash64(b'abc'):016x}"  # '44bc2cf5ad770999'
+dijkstra(Graph(3, [(0, 1, 2.0), (1, 2, 3.0)]), 0)  # [0, 2.0, 5.0]
 try:
     dijkstra(Graph(2, [(0, 1, -1.0)]), 0)
 except AlgoError as e:
-    e.code                                        # 'NEGATIVE_WEIGHT'
+    e.code  # 'NEGATIVE_WEIGHT'
 ```
 
 ## API summary

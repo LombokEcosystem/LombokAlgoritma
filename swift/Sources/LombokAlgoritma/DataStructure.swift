@@ -19,7 +19,18 @@ public struct BloomFilter {
         let h1 = StringAlgo.fnv1a32(item)
         var h2: UInt32 = 0x811c9dc5
         for b in (item + "\0seed2").utf8 { h2 ^= UInt32(b); h2 = h2 &* 0x01000193 }
-        return (0..<k).map { i in Int(abs(Int64(bitPattern: UInt64(h1) + UInt64(i) * UInt64(h2))) % m) }
+        // Split into typed steps: the one-line form exceeded the Swift type-checker time limit.
+        // h1 + i*h2 < 2^63 for any realistic k, so this equals the previous abs(Int64(bitPattern:)) % m.
+        let base = UInt64(h1)
+        let step = UInt64(h2)
+        let modulus = UInt64(m)
+        var out: [Int] = []
+        out.reserveCapacity(k)
+        for i in 0..<k {
+            let combined: UInt64 = base &+ UInt64(i) &* step
+            out.append(Int(combined % modulus))
+        }
+        return out
     }
 
     public mutating func add(_ item: String) {
