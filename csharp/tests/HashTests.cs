@@ -1,4 +1,5 @@
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
+using System;
 using CodingLombok.LombokAlgoritma.Hash;
 using Xunit;
 

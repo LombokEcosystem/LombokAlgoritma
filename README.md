@@ -55,7 +55,7 @@ byte-identical to the TypeScript reference ([SPEC](docs/SPEC_LombokAlgoritma_v0.
 | PHP | 137 | 92/92 | ✅ |
 | Java | 8 | — | 🟡 |
 | Kotlin | 10 | — | 🟡 |
-| C# | 15 | — | 🟡 |
+| C# | 17 | — | 🟡 |
 | C++ | 18 | — | 🟡 |
 | Swift | 18 | — | 🟡 |
 | Perl | 11 | — | 🟡 |
