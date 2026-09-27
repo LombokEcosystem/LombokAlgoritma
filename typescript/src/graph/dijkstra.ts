@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
 import { NegativeWeightError } from '../core/errors.js';
 import { MinHeap, tupleLess } from '../core/heap.js';
-import { type Graph, assertNode, buildAdjList } from './types.js';
+import { assertNode, buildAdjList, type Graph } from './types.js';
 
 /**
  * Shortest distance from `source` to every node (`Infinity` when unreachable).

@@ -1,6 +1,6 @@
 // LombokAlgoritma — Topological sort (Kahn)
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
-import { type Graph, buildAdjList } from './types.js';
+import { buildAdjList, type Graph } from './types.js';
 
 /**
  * Kahn's algorithm with a FIFO queue seeded with the zero-in-degree nodes in ascending order;

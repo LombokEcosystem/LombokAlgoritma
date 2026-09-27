@@ -5,6 +5,7 @@
 // Deterministic generators are NOT suitable for secrets.
 
 import { AlgoError, OutOfRangeError } from './errors.js';
+
 const MASK64 = (1n << 64n) - 1n;
 
 /** Cryptographically secure random bytes — uses the platform Web Crypto API. */

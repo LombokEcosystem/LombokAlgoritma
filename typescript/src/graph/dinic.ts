@@ -1,7 +1,7 @@
 // LombokAlgoritma — Maximum flow (Dinic)
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
 import { InvalidInputError, NegativeWeightError } from '../core/errors.js';
-import { type Graph, assertNode, validateGraph } from './types.js';
+import { assertNode, type Graph, validateGraph } from './types.js';
 
 /**
  * Value of a maximum `source → sink` flow; edge weights are capacities (parallel edges add up).

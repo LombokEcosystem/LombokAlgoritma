@@ -1,6 +1,6 @@
 // LombokAlgoritma — Strongly connected components (Tarjan)
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
-import { type Graph, buildAdjList } from './types.js';
+import { buildAdjList, type Graph } from './types.js';
 
 /**
  * Strongly connected components by Tarjan's algorithm, implemented iteratively (no recursion

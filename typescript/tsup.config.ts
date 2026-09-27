@@ -6,7 +6,7 @@
 //   dist/cjs/<entry>.js      (CommonJS; dist/cjs/package.json marks the folder "commonjs")
 //   dist/types/<entry>.d.ts  (declarations)
 import { writeFileSync } from 'node:fs';
-import { type Options, defineConfig } from 'tsup';
+import { defineConfig, type Options } from 'tsup';
 
 const modules = [
   'sort',
