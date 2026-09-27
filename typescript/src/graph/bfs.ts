@@ -1,6 +1,6 @@
 // LombokAlgoritma — Breadth-first search
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
-import { type Graph, assertNode, buildAdjList } from './types.js';
+import { assertNode, buildAdjList, type Graph } from './types.js';
 
 /**
  * Hop distance from `source` to every node (−1 when unreachable). O(V + E).

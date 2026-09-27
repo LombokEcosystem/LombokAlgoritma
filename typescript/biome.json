@@ -1,7 +1,11 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
-  "organizeImports": {
-    "enabled": true
+  "$schema": "https://biomejs.dev/schemas/2.5.14/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
   },
   "formatter": {
     "enabled": true,
@@ -13,7 +17,7 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "correctness": {
         "noUnusedVariables": "error",
         "noUnusedImports": "error",
@@ -39,8 +43,15 @@
     }
   },
   "files": {
-    "include": ["src/**/*.ts", "tests/**/*.ts", "scripts/**/*.ts", "tsup.config.ts"],
-    "ignore": ["dist/**", "node_modules/**", "coverage/**"]
+    "includes": [
+      "**/src/**/*.ts",
+      "**/tests/**/*.ts",
+      "**/scripts/**/*.ts",
+      "**/tsup.config.ts",
+      "!**/dist",
+      "!**/node_modules",
+      "!**/coverage"
+    ]
   },
   "javascript": {
     "formatter": {
@@ -48,5 +59,17 @@
       "trailingCommas": "all",
       "semicolons": "always"
     }
-  }
+  },
+  "overrides": [
+    {
+      "includes": ["**/index.ts"],
+      "assist": {
+        "actions": {
+          "source": {
+            "organizeImports": "off"
+          }
+        }
+      }
+    }
+  ]
 }

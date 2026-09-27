@@ -20,16 +20,14 @@ import {
   SegmentTree,
 } from '../../src/datastructure/index.js';
 import {
-  type Point2D,
   bezier,
   closestPair,
   convexHull,
   cross,
+  type Point2D,
   pointInPolygon,
 } from '../../src/geometry/index.js';
 import {
-  type Edge,
-  type Graph,
   aStar,
   bellmanFord,
   bfs,
@@ -37,7 +35,9 @@ import {
   dfs,
   dijkstra,
   dinic,
+  type Edge,
   floydWarshall,
+  type Graph,
   kruskal,
   pageRank,
   prim,

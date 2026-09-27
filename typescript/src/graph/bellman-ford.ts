@@ -1,6 +1,6 @@
 // LombokAlgoritma — Bellman–Ford single-source shortest paths (negative weights allowed)
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
-import { type Graph, assertNode, validateGraph } from './types.js';
+import { assertNode, type Graph, validateGraph } from './types.js';
 
 /** Result of {@link bellmanFord}. */
 export interface BellmanFordResult {

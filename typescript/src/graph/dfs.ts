@@ -1,6 +1,6 @@
 // LombokAlgoritma — Depth-first search
 // SPDX-License-Identifier: Apache-2.0 OR MIT — @codinglombok
-import { type Graph, assertNode, buildAdjList } from './types.js';
+import { assertNode, buildAdjList, type Graph } from './types.js';
 
 /**
  * Pre-order of an iterative DFS from `source`: pop a node, skip it if visited, otherwise emit it and
