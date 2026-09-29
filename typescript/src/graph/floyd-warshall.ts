@@ -9,14 +9,21 @@ import { type Graph, validateGraph } from './types.js';
 export function floydWarshall(g: Graph): number[][] {
   validateGraph(g);
   const n = g.nodes;
-  const dist = Array.from({ length: n }, (_, i) =>
-    Array.from({ length: n }, (__, j) => (i === j ? 0 : Number.POSITIVE_INFINITY)),
-  );
-  // validateGraph guarantees integer endpoints in [0, n): only real array indices are written.
+  // Minimum weight per (from, to). A Map keeps caller-supplied endpoints out of property writes.
+  const minWeight = new Map<number, number>();
   for (const e of g.edges) {
-    const row = dist[e.from] as number[];
-    row[e.to] = Math.min(row[e.to] as number, e.weight);
+    const key = e.from * n + e.to;
+    minWeight.set(key, Math.min(minWeight.get(key) ?? Number.POSITIVE_INFINITY, e.weight));
   }
+  // Cells are written by loop counters only, never by input-derived keys.
+  const dist = Array.from({ length: n }, (_, i) =>
+    Array.from({ length: n }, (__, j) =>
+      Math.min(
+        i === j ? 0 : Number.POSITIVE_INFINITY,
+        minWeight.get(i * n + j) ?? Number.POSITIVE_INFINITY,
+      ),
+    ),
+  );
   for (let k = 0; k < n; k++) {
     const dk = dist[k] as number[];
     for (let i = 0; i < n; i++) {

@@ -16,6 +16,10 @@ query-filters:
       # and would break byte-identical output across the five ports.
       id: py/hypot
   - exclude:
+      # Same rule as py/hypot, reported on closest_pair.py: SPEC §13.2 mandates the explicit
+      # sqrt(dx*dx + dy*dy) form for byte-identical output across ports.
+      id: py/pythagorean
+  - exclude:
       # python/lombokalgoritma/math.py does `import math as _stdmath` — that is the standard library,
       # not the module itself (absolute imports). Removing it broke isqrt().
       id: py/import-own-module
