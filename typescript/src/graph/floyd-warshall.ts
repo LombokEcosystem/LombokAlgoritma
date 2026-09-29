@@ -12,10 +12,13 @@ export function floydWarshall(g: Graph): number[][] {
   const dist = Array.from({ length: n }, (_, i) =>
     Array.from({ length: n }, (__, j) => (i === j ? 0 : Number.POSITIVE_INFINITY)),
   );
-  // validateGraph guarantees integer endpoints in [0, n): only real array indices are written.
+  // validateGraph guarantees integer endpoints in [0, n); the explicit bounds check keeps the
+  // write to real array indices only (never a property like "__proto__").
   for (const e of g.edges) {
-    const row = dist[e.from] as number[];
-    row[e.to] = Math.min(row[e.to] as number, e.weight);
+    const { from, to } = e;
+    if (!(from >= 0 && from < n && to >= 0 && to < n)) continue;
+    const row = dist[from] as number[];
+    row[to] = Math.min(row[to] as number, e.weight);
   }
   for (let k = 0; k < n; k++) {
     const dk = dist[k] as number[];
