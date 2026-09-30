@@ -5,6 +5,38 @@ Format: [Keep a Changelog](https://keepachangelog.com/en/1.0.0/) — SemVer.
 
 ---
 
+## [0.2.0](https://github.com/LombokEcosystem/LombokAlgoritma/compare/v0.1.0...v0.2.0) (2026-09-30)
+
+
+### ⚠ BREAKING CHANGES
+
+* SHA-256, HMAC-SHA-256 and HKDF (TS sha256/sha256hex/hmacSha256/hkdf*, subpath `lombokalgoritma/crypto`, and the equivalents in Rust, Go, Python, PHP, Perl, C#) are removed (ADR-016 → lombokencryptdecrypt). Errors carry canonical codes (SPEC §2) in every port; string algorithms operate on Unicode code points. See UPGRADE.md.
+
+### Fixed
+
+* **ci:** install cargo-audit 0.22 (CVSS 4.0 support) via install-action v2.87.18 ([e96b308](https://github.com/LombokEcosystem/LombokAlgoritma/commit/e96b30844f9fc4b10b7076c19cdd47959e48b761))
+* **ci:** revert broken CodeQL autofixes, fix C#/Swift builds, pin golangci-lint toolchain ([3eed659](https://github.com/LombokEcosystem/LombokAlgoritma/commit/3eed6599b7dcafd04b7fce04b20a204e8763d512))
+* **ci:** revert CodeQL autofixes, C#/Swift builds, cargo-audit CVSS 4, esbuild override ([a778f7b](https://github.com/LombokEcosystem/LombokAlgoritma/commit/a778f7b85ae8a229aad92d1dba6300955dc74f41))
+* **ci:** ruff 0.16 markdown formatting, Swift type-check timeout, C# tests missing System ([310d1b0](https://github.com/LombokEcosystem/LombokAlgoritma/commit/310d1b064f148c722685948ec2938fb0e6bd1081))
+* **deps:** override esbuild to ^0.28.1 (GHSA dev-server path traversal on Windows) ([65934ce](https://github.com/LombokEcosystem/LombokAlgoritma/commit/65934ce2ef77563a4b83e823341eac4aadc8c9b3))
+* math edge cases, C++/Perl ports, counts script, dual license, CI ([aa2cbfa](https://github.com/LombokEcosystem/LombokAlgoritma/commit/aa2cbfa9413214b79809d42f637b97ccbfcd8490))
+* **security:** bounds-check Floyd-Warshall edge writes; exclude py/pythagorean (SPEC §13.2) ([5ade15d](https://github.com/LombokEcosystem/LombokAlgoritma/commit/5ade15da9154e5804322a8de5e81e5f31a9db3a6))
+* **security:** build Floyd-Warshall matrix from a Map, not input-keyed writes ([8e2b27c](https://github.com/LombokEcosystem/LombokAlgoritma/commit/8e2b27cf9122d3dfbf636337cf14007fbfe27580))
+* **security:** resolve code-scanning alerts [#25](https://github.com/LombokEcosystem/LombokAlgoritma/issues/25) and [#26](https://github.com/LombokEcosystem/LombokAlgoritma/issues/26) ([9aadbff](https://github.com/LombokEcosystem/LombokAlgoritma/commit/9aadbff1f737b7846f790c9af7c172680a6179be))
+* **ts:** correct CRT, HLL, xxHash32, segment tree, PRNG seeding; tsup build; lint/tsc clean ([3a10673](https://github.com/LombokEcosystem/LombokAlgoritma/commit/3a1067371e45100f591b4d73741f80607cdb80bc))
+* v0.1.1 ([cbe76d6](https://github.com/LombokEcosystem/LombokAlgoritma/commit/cbe76d6aae438cd1b85143b5528131816f466349))
+
+
+### Changed
+
+* **ports:** Rust workspace in rust/, Go module in go/, fix Python/PHP ports ([c0cdb2a](https://github.com/LombokEcosystem/LombokAlgoritma/commit/c0cdb2a47061adb2e4056ad907ccc75dfc8d9b80))
+* v0.2.0 — crypto removed, one folder per language, vectors identical in 5 ports ([57fda80](https://github.com/LombokEcosystem/LombokAlgoritma/commit/57fda8073006392aec1d9a4f6394cddd300a744d))
+
+
+### Documentation
+
+* **readme:** regenerate algorithm counts (C# 15 -&gt; 17 after Fnv1a.cs restore) ([8afef34](https://github.com/LombokEcosystem/LombokAlgoritma/commit/8afef343e357f3feabf65d43233615d804c6f8d1))
+
 ## [0.2.0] — breaking refactor (PR "refactor!: v0.2.0")
 
 Every conformant port (TypeScript, Rust, Python, Go, PHP) now passes the shared vectors
