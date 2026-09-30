@@ -15,8 +15,8 @@ edition = "2021"
 rust-version = "1.75"
 authors = ["codinglombok <codinglombok@gmail.com>"]
 license = "Apache-2.0 OR MIT"
-repository = "https://github.com/codinglombok/LombokAlgoritma"
-homepage = "https://github.com/codinglombok/LombokAlgoritma"
+repository = "https://github.com/LombokEcosystem/LombokAlgoritma"
+homepage = "https://github.com/LombokEcosystem/LombokAlgoritma"
 
 [workspace.lints.rust]
 unsafe_op_in_unsafe_fn = "deny"

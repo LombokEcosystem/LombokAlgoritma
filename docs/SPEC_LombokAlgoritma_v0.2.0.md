@@ -6,7 +6,7 @@
 |---|---|
 | Versi spesifikasi | 0.2.0 (pertama; v0.1.x tidak memiliki SPEC) |
 | Tanggal | 2026-09-25 |
-| Repo | [codinglombok/LombokAlgoritma](https://github.com/codinglombok/LombokAlgoritma) · cluster 00.02 · L0 |
+| Repo | [LombokEcosystem/LombokAlgoritma](https://github.com/LombokEcosystem/LombokAlgoritma) · cluster 00.02 · L0 |
 | Berkas vector | `vectors/lombokalgoritma-vectors-v1.json` — SHA-256 `52f0df2417a11dd7b9d395947c09a68c03917cca7f843f63e1a9f7cf4d697e34` (juga di `vectors/SHA256SUMS`, diperiksa CI) |
 | Port wajib sesuai | TypeScript (referensi), Rust, Python, Go, PHP |
 | Port lain | Java, Kotlin, C#, C++, Swift, Perl, SQL — **informatif**; belum wajib lulus vector |

@@ -4,14 +4,14 @@
   "description": "LombokAlgoritma — deterministic, zero-dependency algorithm library (sort, search, graph, math, string, data structures, ML). TypeScript reference of the Lombok Ecosystem.",
   "author": "codinglombok <codinglombok@gmail.com>",
   "license": "Apache-2.0 OR MIT",
-  "homepage": "https://github.com/codinglombok/LombokAlgoritma",
+  "homepage": "https://github.com/LombokEcosystem/LombokAlgoritma",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/codinglombok/LombokAlgoritma.git",
+    "url": "git+https://github.com/LombokEcosystem/LombokAlgoritma.git",
     "directory": "typescript"
   },
   "bugs": {
-    "url": "https://github.com/codinglombok/LombokAlgoritma/issues"
+    "url": "https://github.com/LombokEcosystem/LombokAlgoritma/issues"
   },
   "keywords": [
     "algorithm",

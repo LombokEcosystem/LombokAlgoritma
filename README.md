@@ -5,9 +5,9 @@ implementation with ports to Rust, Go, Python, PHP and more.
 Cluster **00.02** · level **L0** · license **Apache-2.0 OR MIT**.
 
 <!-- GitHub -->
-[![GitHub](https://img.shields.io/badge/GitHub-LombokAlgoritma-181717?style=flat-square&logo=github&labelColor=181717)](https://github.com/codinglombok/LombokAlgoritma)
-[![CI](https://img.shields.io/github/actions/workflow/status/codinglombok/LombokAlgoritma/ci.yml?branch=main&style=flat-square&label=CI&labelColor=181717)](https://github.com/codinglombok/LombokAlgoritma/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/codinglombok/LombokAlgoritma?style=flat-square&labelColor=181717)](https://github.com/codinglombok/LombokAlgoritma/releases)
+[![GitHub](https://img.shields.io/badge/GitHub-LombokAlgoritma-181717?style=flat-square&logo=github&labelColor=181717)](https://github.com/LombokEcosystem/LombokAlgoritma)
+[![CI](https://img.shields.io/github/actions/workflow/status/LombokEcosystem/LombokAlgoritma/ci.yml?branch=main&style=flat-square&label=CI&labelColor=181717)](https://github.com/LombokEcosystem/LombokAlgoritma/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/LombokEcosystem/LombokAlgoritma?style=flat-square&labelColor=181717)](https://github.com/LombokEcosystem/LombokAlgoritma/releases)
 <!-- npm -->
 [![npm](https://img.shields.io/npm/v/lombokalgoritma?style=flat-square&logo=npm&labelColor=CB3837&color=CB3837)](https://www.npmjs.com/package/lombokalgoritma)
 <!-- Registries -->
@@ -16,7 +16,7 @@ Cluster **00.02** · level **L0** · license **Apache-2.0 OR MIT**.
 [![Packagist](https://img.shields.io/packagist/v/codinglombok/lombokalgoritma?style=flat-square&logo=packagist&labelColor=F28D1A)](https://packagist.org/packages/codinglombok/lombokalgoritma)
 [![Go Reference](https://img.shields.io/badge/go-reference-007D9C?style=flat-square&logo=go&labelColor=007D9C)](https://pkg.go.dev/github.com/codinglombok/lombokalgoritma/go)
 <!-- Quality -->
-[![codecov](https://img.shields.io/codecov/c/github/codinglombok/LombokAlgoritma?style=flat-square&labelColor=F01F7A)](https://codecov.io/gh/codinglombok/LombokAlgoritma)
+[![codecov](https://img.shields.io/codecov/c/github/LombokEcosystem/LombokAlgoritma?style=flat-square&labelColor=F01F7A)](https://codecov.io/gh/LombokEcosystem/LombokAlgoritma)
 [![License](https://img.shields.io/badge/license-Apache--2.0%20OR%20MIT-blue?style=flat-square)](#license)
 <!-- Lombok Ecosystem -->
 [![Lombok Ecosystem](https://img.shields.io/badge/Lombok-Ecosystem-0E7C66?style=flat-square)](https://github.com/codinglombok)

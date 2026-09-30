@@ -8,7 +8,7 @@
     <owners>codinglombok</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">Apache-2.0 OR MIT</license>
-    <projectUrl>https://github.com/codinglombok/LombokAlgoritma</projectUrl>
+    <projectUrl>https://github.com/LombokEcosystem/LombokAlgoritma</projectUrl>
     <description>Comprehensive algorithm library — 160+ algorithms, 12 language ports,
 zero external dependencies. C# / .NET 8+ port of LombokAlgoritma.
 Part of the Lombok Ecosystem (github.com/codinglombok).</description>

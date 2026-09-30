@@ -12,7 +12,7 @@
 
     <name>LombokAlgoritma</name>
     <description>LombokAlgoritma — deterministic algorithm library (Java port), zero runtime dependencies.</description>
-    <url>https://github.com/codinglombok/LombokAlgoritma</url>
+    <url>https://github.com/LombokEcosystem/LombokAlgoritma</url>
 
     <licenses>
         <!-- SPDX-License-Identifier: Apache-2.0 OR MIT (dual, at your option) -->
@@ -38,15 +38,15 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/codinglombok/LombokAlgoritma.git</connection>
-        <developerConnection>scm:git:ssh://github.com:codinglombok/LombokAlgoritma.git</developerConnection>
-        <url>https://github.com/codinglombok/LombokAlgoritma</url>
+        <connection>scm:git:git://github.com/LombokEcosystem/LombokAlgoritma.git</connection>
+        <developerConnection>scm:git:ssh://github.com:LombokEcosystem/LombokAlgoritma.git</developerConnection>
+        <url>https://github.com/LombokEcosystem/LombokAlgoritma</url>
         <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
         <system>GitHub</system>
-        <url>https://github.com/codinglombok/LombokAlgoritma/issues</url>
+        <url>https://github.com/LombokEcosystem/LombokAlgoritma/issues</url>
     </issueManagement>
 
     <!-- Zero external runtime dependencies -->
