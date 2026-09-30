@@ -110,7 +110,7 @@ jobs:
         run: |
           curl -fsS -XPOST -H 'content-type: application/json' \
             "https://packagist.org/api/update-package?username=${PACKAGIST_USERNAME}&apiToken=${PACKAGIST_TOKEN}" \
-            -d '{"repository":{"url":"https://github.com/codinglombok/LombokAlgoritma"}}'
+            -d '{"repository":{"url":"https://github.com/LombokEcosystem/LombokAlgoritma"}}'
 
   crates:
     needs: version

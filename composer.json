@@ -24,10 +24,10 @@
         "zero-dependency",
         "lombok-ecosystem"
     ],
-    "homepage": "https://github.com/codinglombok/LombokAlgoritma",
+    "homepage": "https://github.com/LombokEcosystem/LombokAlgoritma",
     "support": {
-        "issues": "https://github.com/codinglombok/LombokAlgoritma/issues",
-        "source": "https://github.com/codinglombok/LombokAlgoritma"
+        "issues": "https://github.com/LombokEcosystem/LombokAlgoritma/issues",
+        "source": "https://github.com/LombokEcosystem/LombokAlgoritma"
     },
     "require": {
         "php": "^8.2",

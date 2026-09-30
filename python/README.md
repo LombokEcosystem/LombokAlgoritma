@@ -1,6 +1,6 @@
 # lombokalgoritma (Python)
 
-Pure-Python 3.10+ port of [LombokAlgoritma](https://github.com/codinglombok/LombokAlgoritma) —
+Pure-Python 3.10+ port of [LombokAlgoritma](https://github.com/LombokEcosystem/LombokAlgoritma) —
 deterministic algorithms with **zero runtime dependencies** (stdlib only). Conforms to
 SPEC v0.2.0: all 1059 shared vectors pass, byte-identical to the TypeScript reference.
 

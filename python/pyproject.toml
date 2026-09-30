@@ -43,11 +43,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage      = "https://github.com/codinglombok/LombokAlgoritma"
-Repository    = "https://github.com/codinglombok/LombokAlgoritma"
-Documentation = "https://github.com/codinglombok/LombokAlgoritma/tree/main/docs"
-"Bug Tracker" = "https://github.com/codinglombok/LombokAlgoritma/issues"
-Changelog     = "https://github.com/codinglombok/LombokAlgoritma/blob/main/CHANGELOG.md"
+Homepage      = "https://github.com/LombokEcosystem/LombokAlgoritma"
+Repository    = "https://github.com/LombokEcosystem/LombokAlgoritma"
+Documentation = "https://github.com/LombokEcosystem/LombokAlgoritma/tree/main/docs"
+"Bug Tracker" = "https://github.com/LombokEcosystem/LombokAlgoritma/issues"
+Changelog     = "https://github.com/LombokEcosystem/LombokAlgoritma/blob/main/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["lombokalgoritma"]

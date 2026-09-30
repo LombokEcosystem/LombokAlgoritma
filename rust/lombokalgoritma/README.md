@@ -1,6 +1,6 @@
 # lombokalgoritma (Rust)
 
-Rust port of [LombokAlgoritma](https://github.com/codinglombok/LombokAlgoritma) — deterministic,
+Rust port of [LombokAlgoritma](https://github.com/LombokEcosystem/LombokAlgoritma) — deterministic,
 zero-dependency algorithms whose results are byte-identical to every other port
 (`docs/SPEC_LombokAlgoritma_v0.2.0.md`, shared vectors in `vectors/`).
 `#![no_std]` + `alloc`; the `std` feature is enabled by default (results are identical without it).

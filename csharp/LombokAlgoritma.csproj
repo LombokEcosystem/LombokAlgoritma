@@ -10,7 +10,7 @@
     <Authors>codinglombok</Authors>
     <Description>LombokAlgoritma — deterministic algorithm library (C# port, partial; see README status). Zero dependencies.</Description>
     <PackageLicenseExpression>Apache-2.0 OR MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/codinglombok/LombokAlgoritma</RepositoryUrl>
+    <RepositoryUrl>https://github.com/LombokEcosystem/LombokAlgoritma</RepositoryUrl>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
   </PropertyGroup>

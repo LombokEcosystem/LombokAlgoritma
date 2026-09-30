@@ -7,7 +7,7 @@ Thank you for contributing! The normative contract is
 ## Development setup
 
 ```bash
-git clone https://github.com/codinglombok/LombokAlgoritma && cd LombokAlgoritma
+git clone https://github.com/LombokEcosystem/LombokAlgoritma && cd LombokAlgoritma
 (cd typescript && npm ci)
 (cd rust && cargo build --workspace)
 pip install -e "./python[dev]"
